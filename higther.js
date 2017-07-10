@@ -1,10 +1,12 @@
 function myHigherFunction (func) {
 console.log('myFunction');
-func();
+return outsideFunction
 }
 
 function outsideFunction () {
 console.log('outsideFunction')
 }
 
-myHigherFunction(outsideFunction);
+let returnValue = myHigherFunction();
+returnValue();
+
